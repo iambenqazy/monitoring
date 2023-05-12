@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  gatus:
+    image: twinproduction/gatus
+    container_name: 'gatus'
+    volumes:
+      - type: bind
+        source: ./config.yaml
+        target: /config/config.yaml
+    ports:
+      - "8080:8080"

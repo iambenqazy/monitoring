@@ -1,0 +1,21 @@
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_create.rrd
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_rows.rrd
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_errors.rrd
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_invalid.rrd
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_skipped.rrd
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_update.rrd
+wrote /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_runtime.rrd
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_runtime.rrd 1683861639:0.012584
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_rows.rrd 1683861639:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_errors.rrd 1683861639:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_invalid.rrd 1683861639:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_skipped.rrd 1683861639:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_update.rrd 1683861639:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_create.rrd 1683861639:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_runtime.rrd 1683868848:0.020855
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_rows.rrd 1683868848:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_errors.rrd 1683868848:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_invalid.rrd 1683868848:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_skipped.rrd 1683868848:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_update.rrd 1683868848:0
+update /opt/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime_create.rrd 1683868848:0

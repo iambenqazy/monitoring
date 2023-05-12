@@ -1,0 +1,3 @@
+# Written by Checkmk store
+
+wato_tags.update({'tag_groups': [{'id': 'criticality', 'title': 'Criticality', 'tags': [{'id': 'prod', 'title': 'Productive system', 'aux_tags': []}, {'id': 'critical', 'title': 'Business critical', 'aux_tags': []}, {'id': 'test', 'title': 'Test system', 'aux_tags': []}, {'id': 'offline', 'title': 'Do not monitor this host', 'aux_tags': []}]}, {'id': 'networking', 'title': 'Networking Segment', 'tags': [{'id': 'lan', 'title': 'Local network (low latency)', 'aux_tags': []}, {'id': 'wan', 'title': 'WAN (high latency)', 'aux_tags': []}, {'id': 'dmz', 'title': 'DMZ (low latency, secure access)', 'aux_tags': []}]}], 'aux_tags': []})

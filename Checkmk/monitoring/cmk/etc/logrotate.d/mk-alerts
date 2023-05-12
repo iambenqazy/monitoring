@@ -1,0 +1,7 @@
+/omd/sites/cmk/var/log/alerts.log {
+	missingok
+	rotate 7
+	compress
+	delaycompress
+	notifempty
+}

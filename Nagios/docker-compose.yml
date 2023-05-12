@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  nagios:
+    image: manios/nagios:latest
+    container_name: nagios
+    ports:
+      - 0.0.0.0:8088:80 
+
+
+

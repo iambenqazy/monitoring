@@ -1,0 +1,7 @@
+/omd/sites/cmk/var/log/update.log {
+        missingok
+        rotate 7
+        compress
+        delaycompress
+        create 640 cmk cmk 
+}

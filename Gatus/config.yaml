@@ -1,0 +1,9 @@
+endpoints:
+  - name: ofwa
+    url: "https://web.ofwa.local"
+    interval: 60s
+    conditions:
+      - "[STATUS] == 200"
+    client:
+      insecure: true
+      dns-resolver: "tcp://172.16.222.10:53"

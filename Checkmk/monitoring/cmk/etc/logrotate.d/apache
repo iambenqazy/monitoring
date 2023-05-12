@@ -1,0 +1,12 @@
+/omd/sites/cmk/var/log/apache/*_log {
+	missingok
+	rotate 52
+	compress
+	delaycompress
+	notifempty
+	create 640 cmk cmk 
+	sharedscripts
+	postrotate
+		/omd/sites/cmk/etc/init.d/apache reload
+	endscript
+}

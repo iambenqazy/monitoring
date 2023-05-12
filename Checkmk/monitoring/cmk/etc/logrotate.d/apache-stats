@@ -1,0 +1,13 @@
+/omd/sites/cmk/var/log/apache/stats {
+        missingok
+        rotate 1
+        size 1M
+        compress
+        delaycompress
+        notifempty
+        create 640 cmk cmk 
+        sharedscripts
+        postrotate
+                /omd/sites/cmk/etc/init.d/apache reload >/dev/null
+        endscript
+}

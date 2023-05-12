@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  checkmk:
+    image: checkmk/check-mk-raw:2.1.0-latest
+    container_name: checkmk
+    ports:
+     - 8080:5000
+     - 8000:8000
+    volumes:
+      - type: bind
+        source: monitoring
+        target: /omd/sites
+      - "/etc/localtime:/etc/localtime:ro"
+    tmpfs:
+      - "/opt/omd/sites/cmk/tmp:uid=1000,gid=1000"
+    restart: always
