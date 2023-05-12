@@ -1,9 +1,0 @@
-ERROR: Unexpected exception: Traceback (most recent call last):
-  File "/omd/sites/cmk/bin/diskspace", line 468, in <module>
-    main()
-  File "/omd/sites/cmk/bin/diskspace", line 457, in main
-    bytes_free = _get_free_space()
-  File "/omd/sites/cmk/bin/diskspace", line 161, in _get_free_space
-    if filesystem[0] == "/":
-IndexError: string index out of range
-
