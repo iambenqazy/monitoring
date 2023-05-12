@@ -10,7 +10,7 @@
     <NAME>runtime</NAME>
     <LABEL>runtime</LABEL>
     <UNIT>s</UNIT>
-    <ACT>0.03492</ACT>
+    <ACT>0.03002</ACT>
     <WARN></WARN>
     <WARN_MIN></WARN_MIN>
     <WARN_MAX></WARN_MAX>
@@ -166,10 +166,10 @@
   <NAGIOS_DISP_SERVICEDESC>runtime</NAGIOS_DISP_SERVICEDESC>
   <NAGIOS_HOSTNAME>.pnp-internal</NAGIOS_HOSTNAME>
   <NAGIOS_MULTI_PARENT></NAGIOS_MULTI_PARENT>
-  <NAGIOS_PERFDATA>runtime=0.03492s rows=0 errors=0 invalid=0 skipped=0 update=0 create=0</NAGIOS_PERFDATA>
+  <NAGIOS_PERFDATA>runtime=0.03002s rows=0 errors=0 invalid=0 skipped=0 update=0 create=0</NAGIOS_PERFDATA>
   <NAGIOS_RRDFILE></NAGIOS_RRDFILE>
   <NAGIOS_SERVICEDESC>runtime</NAGIOS_SERVICEDESC>
-  <NAGIOS_TIMET>1683877856</NAGIOS_TIMET>
+  <NAGIOS_TIMET>1683878148</NAGIOS_TIMET>
   <NAGIOS_XMLFILE>/omd/sites/cmk/var/pnp4nagios/perfdata/.pnp-internal/runtime.xml</NAGIOS_XMLFILE>
   <XML>
    <VERSION>4</VERSION>

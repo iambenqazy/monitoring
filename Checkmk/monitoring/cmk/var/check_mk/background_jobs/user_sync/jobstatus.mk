@@ -1,10 +1,10 @@
 # Written by Checkmk store
 
-{'duration': 0.30495166778564453,
+{'duration': 0.35554027557373047,
  'logfile_path': '~/var/log/web.log',
- 'pid': 91254,
- 'ppid': 91253,
- 'started': 1683877862.412564,
+ 'pid': 91790,
+ 'ppid': 91789,
+ 'started': 1683878162.6019647,
  'state': 'finished',
  'statusfile': 'user_sync/jobstatus.mk',
  'stoppable': False,
