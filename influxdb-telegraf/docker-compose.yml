@@ -26,22 +26,24 @@ services:
     container_name: telegraf
     hostname: telegraf
     restart: unless-stopped
-    # user: telegraf:$(stat -c '%g' /var/run/docker.sock) # see: https://www.influxdata.com/blog/docker-run-telegraf-as-non-root/
-    depends_on:
-      - influxdb
+    user: telegraf:112 # see: https://www.influxdata.com/blog/docker-run-telegraf-as-non-root/
+    command: 
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
       - /:/hostfs:ro
-      - /etc:/hostfs/etc:ro
-      - /proc:/hostfs/proc:ro
-      - /sys:/hostfs/sys:ro
+      # - /etc:/hostfs/etc:ro
+      # - /proc:/hostfs/proc:ro
+      # - /sys:/hostfs/sys:ro
       # - /var/run/utmp:/var/run/utmp:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - HOST_ETC=/hostfs/etc
       - HOST_PROC=/hostfs/proc
       - HOST_SYS=/hostfs/sys
+      - HOST_VAR=/hostfs/var
+      - HOST_RUN=/hostfs/run
       - HOST_MOUNT_PREFIX=/hostfs
+      - INFLUX_TOKEN=h9fQv8zGkNIqlnukHuT3K51wrkj7z0jOO_W8aoJgZsWkhEqouUnoNAcNuErRM-sYr0H-2w4Kdhh
 
 
 networks:
