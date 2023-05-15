@@ -21,27 +21,27 @@ services:
       - grafana_monitoring
 
   
-  # telegraf:
-  #   image: telegraf:latest
-  #   container_name: telegraf
-  #   hostname: telegraf
-  #   restart: unless-stopped
-  #   # user: telegraf:$(stat -c '%g' /var/run/docker.sock) # see: https://www.influxdata.com/blog/docker-run-telegraf-as-non-root/
-  #   depends_on:
-  #     - influxdb
-  #   volumes:
-  #     - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
-  #     - /:/hostfs:ro
-  #     - /etc:/hostfs/etc:ro
-  #     - /proc:/hostfs/proc:ro
-  #     - /sys:/hostfs/sys:ro
-  #     # - /var/run/utmp:/var/run/utmp:ro
-  #     - /var/run/docker.sock:/var/run/docker.sock:ro
-  #   environment:
-  #     - HOST_ETC=/hostfs/etc
-  #     - HOST_PROC=/hostfs/proc
-  #     - HOST_SYS=/hostfs/sys
-  #     - HOST_MOUNT_PREFIX=/hostfs
+  telegraf:
+    image: telegraf:latest
+    container_name: telegraf
+    hostname: telegraf
+    restart: unless-stopped
+    # user: telegraf:$(stat -c '%g' /var/run/docker.sock) # see: https://www.influxdata.com/blog/docker-run-telegraf-as-non-root/
+    depends_on:
+      - influxdb
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - /:/hostfs:ro
+      - /etc:/hostfs/etc:ro
+      - /proc:/hostfs/proc:ro
+      - /sys:/hostfs/sys:ro
+      # - /var/run/utmp:/var/run/utmp:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - HOST_ETC=/hostfs/etc
+      - HOST_PROC=/hostfs/proc
+      - HOST_SYS=/hostfs/sys
+      - HOST_MOUNT_PREFIX=/hostfs
 
 
 networks:
